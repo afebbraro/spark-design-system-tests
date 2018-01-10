@@ -4,9 +4,13 @@ use Slim\Http\Request;
 use Slim\Http\Response;
 
 // Routes
-
 $app->get('/[{name}]', function (Request $request, Response $response, array $args) {
-    return $this->view->render($response, 'index.twig', [
-        'name' => $args['name']
+    $subtemplate = "";
+    if ($args['name']) {
+      $subtemplate = 'patterns/' . $args['name'] . '.twig';
+    }
+
+    return $this->view->render($response, 'default.twig', [
+        'subtemplate' => $subtemplate
     ]);
 });
