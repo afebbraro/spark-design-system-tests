@@ -1,0 +1,18 @@
+version: '3'
+services:
+  sdst-nginx:
+    image: nginx:latest
+    ports:
+      - "4000:80"
+      - "443:443"
+    volumes:
+      - "./docker/nginx-conf/site.conf:/etc/nginx/conf.d/site.conf"
+      - ".:/www/app"
+  sdst-php-fpm:
+    image: halplatform/hal-build-environments:php7.1-centos7
+    ports:
+      - "9000:9000"
+    volumes:
+      - ".:/www/app"
+      - "./docker/php-fpm-config/www.conf:/etc/php-fpm.d/www.conf"
+    command: "/usr/sbin/php-fpm -F"
