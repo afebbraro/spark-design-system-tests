@@ -9,7 +9,7 @@
 <body>
   <h1>Spark Design System Tests</h1>
   {% if subtemplate %}
-    {% include subtemplate %}
+    {% include [subtemplate, 'patterns/not-found.twig'] %}
   {% endif %}
 </body>
 </html>
