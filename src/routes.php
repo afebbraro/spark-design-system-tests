@@ -5,9 +5,14 @@ use Slim\Http\Response;
 
 // Routes
 $app->get('/[{name}]', function (Request $request, Response $response, array $args) {
-    $subtemplate = "";
-    if ($args['name']) {
-      $subtemplate = 'patterns/' . filter_var($args['name'], FILTER_SANITIZE_STRING) . '.twig';
+    $subtemplate = 'patterns/';
+    $patterns = scandir('../templates/patterns');
+    $twigFile = filter_var($args['name'], FILTER_SANITIZE_STRING) . '.twig';
+
+    foreach ($patterns as $patternFile) {
+        if ($patternFile == $twigFile) {
+            $subtemplate = $subtemplate . $patternFile;
+        }
     }
 
     return $this->view->render($response, 'default.twig', [

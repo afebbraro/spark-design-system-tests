@@ -7,9 +7,14 @@
   <title>Spark Design System Tests</title>
 </head>
 <body>
-  <h1>Spark Design System Tests</h1>
-  {% if subtemplate %}
-    {% include [subtemplate, 'patterns/not-found.twig'] %}
-  {% endif %}
+  <section>
+    <header>
+      <img src="spark_logo.jpg" alt="Spark Design System Logo">
+      <h1>Pattern Tests</h1>
+    </header>
+    {% if subtemplate %}
+      {% include subtemplate ignore missing %}
+    {% endif %}
+  </section>
 </body>
 </html>
