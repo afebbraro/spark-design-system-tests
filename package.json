@@ -7,7 +7,10 @@
     "test": "tests"
   },
   "scripts": {
-    "sass": "node-sass ./src/styles/main.scss -o public/"
+    "start": "npm-run-all --parallel sass sass-watch-spark-from-nm browser-sync",
+    "sass": "node-sass ./src/styles/main.scss --source-map true public/main.css -o public/",
+    "sass-watch-spark-from-nm": "node-sass ./src/styles/main.scss -w ./node_modules/@sparkdesignsystem/ --source-map true public/ -o public/",
+    "browser-sync": "browser-sync start --proxy sparkdesignsystemtests:4000 --files public/"
   },
   "repository": {
     "type": "git",
@@ -20,9 +23,11 @@
   },
   "homepage": "https://github.com/sparkdesignsystem/spark-design-system-tests#readme",
   "devDependencies": {
-    "@sparkdesignsystem/spark-core": "^1.0.0-alpha.3"
+    "browser-sync": "^2.23.5",
+    "npm-run-all": "^4.1.2"
   },
   "dependencies": {
+    "@sparkdesignsystem/spark-core": "^1.0.0-alpha.3",
     "node-sass": "^4.7.2"
   }
 }
