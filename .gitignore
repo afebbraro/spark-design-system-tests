@@ -3,3 +3,5 @@
 /cache/
 /vendor/
 /logs/
+/node_modules/
+/public/main.css

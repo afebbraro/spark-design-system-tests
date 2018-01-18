@@ -11,3 +11,4 @@ add the host name to your hosts file
 then run
 
     docker-compose up -d
+    npm run sass

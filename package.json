@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass ./src/styles/main.scss -o public/"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/sparkdesignsystem/spark-design-system-tests/issues"
   },
-  "homepage": "https://github.com/sparkdesignsystem/spark-design-system-tests#readme"
+  "homepage": "https://github.com/sparkdesignsystem/spark-design-system-tests#readme",
+  "devDependencies": {
+    "@sparkdesignsystem/spark-core": "^1.0.0-alpha.3"
+  },
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
 }
