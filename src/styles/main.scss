@@ -37,9 +37,32 @@
 // Spark-core
 ///
 
+@import '../../node_modules/@sparkdesignsystem/spark-core/base/typography';
 @import '../../node_modules/@sparkdesignsystem/spark-core/components/buttons';
 
 // test suite specific styling
 body {
   margin: 1rem;
+}
+
+.sdst-heading,
+.sdst-sub-heading {
+  font-family: Roboto;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.sdst-heading {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+  padding: .4rem;
+}
+
+.sdst-sub-heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.sdst-logo {
+  max-width: 300px;
 }
