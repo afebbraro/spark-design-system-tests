@@ -37,9 +37,18 @@
 // Spark-core
 ///
 
+@import '../../node_modules/@sparkdesignsystem/spark-core/base/typography';
 @import '../../node_modules/@sparkdesignsystem/spark-core/components/buttons';
 
 // test suite specific styling
+
 body {
   margin: 1rem;
 }
+
+@import './test-suite-styles/headings';
+@import './test-suite-styles/logo';
+@import './test-suite-styles/color-boxes';
+
+
+
