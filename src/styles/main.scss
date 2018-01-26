@@ -38,7 +38,13 @@
 ///
 
 @import '../../node_modules/@sparkdesignsystem/spark-core/base/typography';
+@import '../../node_modules/@sparkdesignsystem/spark-core/base/forms';
+
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/icons';
 @import '../../node_modules/@sparkdesignsystem/spark-core/components/buttons';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/input';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/datepicker';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/validation-criteria';
 
 // test suite specific styling
 

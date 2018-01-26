@@ -10,7 +10,7 @@
     "start": "npm-run-all --parallel sass sass-watch-spark-from-nm browser-sync",
     "sass": "node-sass ./src/styles/main.scss --source-map true public/main.css -o public/",
     "sass-watch-spark-from-nm": "node-sass ./src/styles/main.scss -w ./node_modules/@sparkdesignsystem/ --source-map true public/ -o public/",
-    "browser-sync": "browser-sync start --proxy sparkdesignsystemtests:4000 --files public/"
+    "browser-sync": "browser-sync start --proxy sparkdesignsystemtests:4000 --files public/, templates/"
   },
   "repository": {
     "type": "git",
