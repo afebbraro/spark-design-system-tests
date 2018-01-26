@@ -37,14 +37,21 @@
 // Spark-core
 ///
 
-@import '../../node_modules/@sparkdesignsystem/spark-core/base/typography';
 @import '../../node_modules/@sparkdesignsystem/spark-core/base/forms';
+@import '../../node_modules/@sparkdesignsystem/spark-core/base/links';
+@import '../../node_modules/@sparkdesignsystem/spark-core/base/typography';
 
-@import '../../node_modules/@sparkdesignsystem/spark-core/components/icons';
 @import '../../node_modules/@sparkdesignsystem/spark-core/components/buttons';
-@import '../../node_modules/@sparkdesignsystem/spark-core/components/input';
 @import '../../node_modules/@sparkdesignsystem/spark-core/components/datepicker';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/icons';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/input';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/pagination';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/spinners';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/tabs';
+@import '../../node_modules/@sparkdesignsystem/spark-core/components/tables';
 @import '../../node_modules/@sparkdesignsystem/spark-core/components/validation-criteria';
+
+@import '../../node_modules/@sparkdesignsystem/spark-core/tools/animations';
 
 // test suite specific styling
 
