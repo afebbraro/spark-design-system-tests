@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@sparkdesignsystem/spark-core": "^1.0.0-alpha.3",
+    "@sparkdesignsystem/spark-extras": "^1.0.0-alpha.3",
     "node-sass": "^4.7.2"
   }
 }
